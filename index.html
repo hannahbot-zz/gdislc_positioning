@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Relative vs Absolute Positioning</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<!-- Absolute Positioning -->
+		<!-- wrapper div -->
+		<h1>Absolute Positioning</h1>
+		<div class='wrapper'>
+				<!-- image -->
+				<img src='http://www.bubblews.com/assets/images/news/1642585886_1388432038.jpg' width=500px/>
+				<!-- caption -->
+				<div class='absolute'>
+					<p class='caption'>... I am super hungry ...</p>
+				</div>
+		</div>
+		<!-- Relative Positioning -->
+		<!-- wrapper div -->
+		<br><br>
+		<h1>Relative Positioning</h1>
+		<div class='wrapper'>
+				<!-- image -->
+				<img src='http://www.bubblews.com/assets/images/news/1642585886_1388432038.jpg' width=500px/>
+				<!-- caption -->
+				<div class='relative'>
+					<p class='caption'>... I am super hungry ...</p>
+				</div>
+		</div>
+
+		<p>Notice how the caption for the relative positioning is underneath the picture. That's because it starts from where the element would be if it were still in the normal flow.</p>
+		<br><br>
+		<p>Note: The borders affect the positioning - check out the repo and play around with it!</p>
+	</body>
+</html>
